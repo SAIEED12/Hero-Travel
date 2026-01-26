@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero-Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./tailwind.css">
+
+</head>
+<body class="max-w-[1600] font-mulish">
+    <!-- Navbar -->
+     <nav>
+        <div class="nav-container flex justify-around mt-10 cursor-pointer mb-2">
+            <div class="left-nav inline-flex items-center gap-4 text-4xl font-extrabold">
+                <img src="./assets/img/logo.png" alt="" class="animate-bounce">
+                <h1 class="">Hero <span class="text-[#FF5400]">Travel</span></h1>
+            </div>
+            <div class="right-nav list-none flex gap-8 items-center hover:cursor-pointer text-lg">
+                <li class="text-[#FF5400]">Home</li>
+                <li class="hover:text-[#FF5400]">Packages</li>
+                <li class="hover:text-[#FF5400]">Testimonial</li>
+                <li class="hover:text-[#FF5400]">Blog</li>
+                <li class="hover:text-[#FF5400]">Contact</li>
+            </div>
+        </div>
+     </nav>
+     <!-- Banner Section -->
+      <div class="mx-auto h-[500px] w-[1170px] text-center bg-[linear-gradient(180deg,rgba(19,19,19,0.8)_0%,rgba(19,19,19,0)_100%),url('./assets/img/banner.png')] overflow-hidden bg-cover bg-center bg-no-repeat rounded-[20px] mb-[137px]">
+        <div class="flex flex-col items-center justify-center h-full px-20 text-center">
+            <h1 class="text-[#FFFFFF] text-[64px] font-extrabold  top-[120px]">Explore Your <span class="text-[#FF5400]">Travel</span></h1>
+            <p class="text-[#FFFFFF] text-base top-[290px] opacity-75 mb-[50px] max-w-[680px]">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+            <div class="w-full max-w-[800px] bg-white/10 backdrop-blur-md p-4 rounded-lg flex items-center">
+                <form action="" class="flex flex-col md:flex-row gap-4 w-full">
+                <input type="text" placeholder="Where to go" class="flex-1 p-3 rounded-lg bg-white">
+                <select name="" id="" class="flex-1 p-3 rounded-lg bg-white hover:cursor-pointer">
+                    <option value="When" selected disabled>When</option>
+                    <option value="When">When</option>
+                    <option value="When">When</option>
+                    <option value="When">When</option>
+                </select>
+                <select name="" id="" class="flex-1 p-3 rounded-lg bg-white hover:cursor-pointer">
+                    <option value="When" selected disabled>Select Type</option>
+                    <option value="When">When</option>
+                    <option value="When">When</option>
+                    <option value="When">When</option>
+                </select>
+                <button class="bg-[#FF5400] text-white px-8 rounded-lg font-bold flex items-center gap-1 cursor-pointer hover:bg-transparent hover:border-1  hover:border-solid"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Find Now</button>
+                </form>
+            </div>
+        </div>
+      </div>
+      <!-- Tour Section -->
+       <div class="tour-container max-w-[1200px] mx-auto flex gap-[50px]">
+        <div class="tour-left">
+            <h3 class="text-[40px] font-extrabold mb-[24px]">Our Popular Tours</h3>
+            <p class="text-[#131318] opacity-[0.7] max-w-[570px] mb-4">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+            <ul class="list-disc pl-8 text-[#131318] opacity-[0.7] max-w-[525px]">
+                <li class="mb-[16px]"> Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
+                <li class="mb-[16px]">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+                <li class="mb-[24px]">Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at.</li>
+            </ul>
+            <p class="text-[#131318] opacity-[0.7] max-w-[530px] mb-[32px]">Amet consectetur. Vulputate commodo felis molestie risus 
+            ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
+            <button class="bg-[#FF5400] text-white px-10 py-3 rounded-lg font-bold flex items-center gap-1 cursor-pointer hover:cursor-pointer hover:bg-black hover:border-1 mb-[100px]">Read More</button>
+        </div>
+        <div class="tour-right">
+            <img src="./assets/img/Rectangle 4.png" alt="">
+        </div>
+       </div>
+       <!-- Destination Section -->
+       <div class="destination-container max-w-[1170px] mx-auto mt-20 px-4">
+    <div class="destination-heading text-center mb-12">
+        <h1 class="text-[40px] font-extrabold text-[#131318] mb-6">Choose Your Destination</h1>
+        <p class="text-[#131318] opacity-75 max-w-[645px] mx-auto">
+            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. 
+            Sodales dictumst nec nibh pellentesque.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-12 gap-6">
+        
+        <div class="relative col-span-6 h-[300px]">
+            <img src="./assets/img/Rectangle 5.png" class="w-full h-full object-cover rounded-xl" alt="Maldives">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
+                <h2 class="text-white text-2xl font-bold">Maldives</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-6 h-[300px]">
+            <img src="./assets/img/Rectangle 8.png" class="w-full h-full object-cover rounded-xl" alt="Indonesia">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
+                <h2 class="text-white text-2xl font-bold">Indonesia</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-4 h-[280px]">
+            <img src="./assets/img/Rectangle 7.png" class="w-full h-full object-cover rounded-xl" alt="Sri Lanka">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
+                <h2 class="text-white text-2xl font-bold">Sri Lanka</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-5 h-[280px]">
+            <img src="./assets/img/Rectangle 6.png" class="w-full h-full object-cover rounded-xl" alt="North America">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
+                <h2 class="text-white text-2xl font-bold">North America</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-3 h-[280px]">
+            <img src="./assets/img/Rectangle 9.png" class="w-full h-full object-cover rounded-xl" alt="Kashmir">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
+                <h2 class="text-white text-2xl font-bold">Kashmir</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-5 h-[300px]">
+            <img src="./assets/img/Rectangle 10.png" class="w-full h-full object-cover rounded-xl" alt="Bangladesh">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
+                <h2 class="text-white text-2xl font-bold">Bangladesh</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-7 h-[300px]">
+            <img src="./assets/img/Rectangle 11.png" class="w-full h-full object-cover rounded-xl" alt="Bandarban">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
+                <h2 class="text-white text-2xl font-bold">Bandarban</h2>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
