@@ -6,240 +6,264 @@
     <title>Hero-Travel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./tailwind.css">
-
+    <style>
+        body { font-family: 'Mulish', sans-serif; }
+    </style>
 </head>
-<body class="max-w-[1600] font-mulish">
-    <!-- Navbar -->
-     <nav>
-        <div class="nav-container flex justify-around mt-10 cursor-pointer mb-2">
-            <div class="left-nav inline-flex items-center gap-4 text-4xl font-extrabold">
-                <img src="./assets/img/logo.png" alt="" class="animate-bounce">
-                <h1 class="">Hero <span class="text-[#FF5400]">Travel</span></h1>
+<body class="max-w-[1600px] mx-auto">
+    <!-- navbar -->
+    <nav class="px-4 md:px-10 lg:px-24 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="left-nav inline-flex items-center gap-4 text-3xl md:text-4xl font-extrabold">
+                <img src="./assets/img/logo.png" alt="Logo" class="animate-bounce w-10 md:w-auto">
+                <h1>Hero <span class="text-[#FF5400]">Travel</span></h1>
             </div>
-            <div class="right-nav list-none flex gap-8 items-center hover:cursor-pointer text-lg">
-                <li class="text-[#FF5400]">Home</li>
-                <li class="hover:text-[#FF5400]">Packages</li>
-                <li class="hover:text-[#FF5400]">Testimonial</li>
-                <li class="hover:text-[#FF5400]">Blog</li>
-                <li class="hover:text-[#FF5400]">Contact</li>
-            </div>
+            
+            <ul class="right-nav flex gap-4 md:gap-8 items-center text-base md:text-lg overflow-x-auto w-full md:w-auto justify-center whitespace-nowrap pb-2 md:pb-0">
+                <li class="text-[#FF5400] cursor-pointer font-bold">Home</li>
+                <li class="hover:text-[#FF5400] cursor-pointer transition-colors">Packages</li>
+                <li class="hover:text-[#FF5400] cursor-pointer transition-colors">Testimonial</li>
+                <li class="hover:text-[#FF5400] cursor-pointer transition-colors">Blog</li>
+                <li class="hover:text-[#FF5400] cursor-pointer transition-colors">Contact</li>
+            </ul>
         </div>
-     </nav>
-     <!-- Banner Section -->
-      <div class="mx-auto h-[500px] w-[1170px] text-center bg-[linear-gradient(180deg,rgba(19,19,19,0.8)_0%,rgba(19,19,19,0)_100%),url('./assets/img/banner.png')] overflow-hidden bg-cover bg-center bg-no-repeat rounded-[20px] mb-[137px]">
-        <div class="flex flex-col items-center justify-center h-full px-20 text-center">
-            <h1 class="text-[#FFFFFF] text-[64px] font-extrabold  top-[120px]">Explore Your <span class="text-[#FF5400]">Travel</span></h1>
-            <p class="text-[#FFFFFF] text-base top-[290px] opacity-75 mb-[50px] max-w-[680px]">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
-            <div class="w-full max-w-[800px] bg-white/10 backdrop-blur-md p-4 rounded-lg flex items-center">
-                <form action="" class="flex flex-col md:flex-row gap-4 w-full">
-                <input type="text" placeholder="Where to go" class="flex-1 p-3 rounded-lg bg-white">
-                <select name="" id="" class="flex-1 p-3 rounded-lg bg-white hover:cursor-pointer">
-                    <option value="When" selected disabled>When</option>
-                    <option value="When">When</option>
-                    <option value="When">When</option>
-                    <option value="When">When</option>
-                </select>
-                <select name="" id="" class="flex-1 p-3 rounded-lg bg-white hover:cursor-pointer">
-                    <option value="When" selected disabled>Select Type</option>
-                    <option value="When">When</option>
-                    <option value="When">When</option>
-                    <option value="When">When</option>
-                </select>
-                <button class="bg-[#FF5400] text-white px-8 rounded-lg font-bold flex items-center gap-1 cursor-pointer hover:bg-transparent hover:border-1  hover:border-solid"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>Find Now</button>
+    </nav>
+    <!-- banner -->
+    <section class="px-4 md:px-10 lg:px-24 mb-20 md:mb-32">
+        <div class="mx-auto min-h-[500px] lg:h-[500px] w-full max-w-[1170px] bg-[linear-gradient(180deg,rgba(19,19,19,0.8)_0%,rgba(19,19,19,0)_100%),url('./assets/img/banner.png')] bg-cover bg-center bg-no-repeat rounded-[20px] flex flex-col items-center justify-center p-6 md:p-12 lg:px-20 text-center">
+            
+            <h1 class="text-white text-4xl md:text-5xl lg:text-[64px] font-extrabold mb-4 leading-tight">
+                Explore Your <span class="text-[#FF5400]">Travel</span>
+            </h1>
+            
+            <p class="text-white text-sm md:text-base opacity-75 mb-8 md:mb-12 max-w-[680px]">
+                Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+            </p>
+
+            <div class="w-full max-w-[800px] bg-white/15 backdrop-blur-md p-4 md:p-6 rounded-xl">
+                <form action="" class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
+                    <input type="text" placeholder="Where to go" 
+                        class="p-3 rounded-lg bg-white outline-none focus:ring-2 focus:ring-orange-500 text-sm">
+                    
+                    <select class="p-3 rounded-lg bg-white cursor-pointer outline-none text-sm">
+                        <option value="" selected disabled>When</option>
+                        <option>Winter</option>
+                        <option>Summer</option>
+                    </select>
+
+                    <select class="p-3 rounded-lg bg-white cursor-pointer outline-none text-sm">
+                        <option value="" selected disabled>Select Type</option>
+                        <option>Luxury</option>
+                        <option>Budget</option>
+                    </select>
+
+                    <button class="bg-[#FF5400] text-white py-3 px-6 rounded-lg font-bold flex items-center justify-center gap-2 cursor-pointer border border-transparent hover:bg-transparent hover:border-white transition-all">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        Find Now
+                    </button>
                 </form>
             </div>
         </div>
-      </div>
+    </section>
       <!-- Tour Section -->
-       <div class="tour-container max-w-[1200px] mx-auto flex gap-[50px]">
-        <div class="tour-left">
-            <h3 class="text-[40px] font-extrabold mb-[24px]">Our Popular Tours</h3>
-            <p class="text-[#131318] opacity-[0.7] max-w-[570px] mb-4">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
-            <ul class="list-disc pl-8 text-[#131318] opacity-[0.7] max-w-[525px]">
-                <li class="mb-[16px]"> Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
-                <li class="mb-[16px]">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
-                <li class="mb-[24px]">Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at.</li>
+    <div class="tour-container max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-[50px] px-4 md:px-10 lg:px-0">
+        
+        <div class="tour-left w-full lg:w-1/2 order-2 lg:order-1">
+            <h3 class="text-3xl md:text-[40px] font-extrabold mb-4 lg:mb-[24px] leading-tight text-[#131318]">
+                Our Popular Tours
+            </h3>
+            
+            <p class="text-[#131318]/70 max-w-[570px] mb-4 text-sm md:text-base">
+                Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.
+            </p>
+            
+            <ul class="list-disc pl-5 md:pl-8 text-[#131318]/70 max-w-[525px] text-sm md:text-base">
+                <li class="mb-3 lg:mb-[16px]">Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
+                <li class="mb-3 lg:mb-[16px]">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+                <li class="mb-4 lg:mb-[24px]">Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at.</li>
             </ul>
-            <p class="text-[#131318] opacity-[0.7] max-w-[530px] mb-[32px]">Amet consectetur. Vulputate commodo felis molestie risus 
-            ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
-            <button class="bg-[#FF5400] text-white px-10 py-3 rounded-lg font-bold flex items-center gap-1 cursor-pointer hover:cursor-pointer hover:bg-black hover:border-1 mb-[100px]">Read More</button>
+            
+            <p class="text-[#131318]/70 max-w-[530px] mb-6 lg:mb-[32px] text-sm md:text-base">
+                Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+            </p>
+            
+            <button class="bg-[#FF5400] text-white px-8 md:px-10 py-3 rounded-lg font-bold transition-all hover:bg-black mb-10 lg:mb-[100px]">
+                Read More
+            </button>
         </div>
-        <div class="tour-right">
-            <img src="./assets/img/Rectangle 4.png" alt="">
+
+        <div class="tour-right w-full lg:w-1/2 order-1 lg:order-2">
+            <img src="./assets/img/Rectangle 4.png" alt="Popular Tour" class="w-full h-auto rounded-2xl object-cover shadow-lg">
         </div>
-       </div>
+        
+    </div>
        <!-- Destination Section -->
-    <div class="destination-container max-w-[1170px] mx-auto mt-20 px-4 mb-[100pxb]">
-        <div class="destination-heading text-center mb-12">
-            <h1 class="text-[40px] font-extrabold text-[#131318] mb-6">Choose Your Destination</h1>
-            <p class="text-[#131318] opacity-75 max-w-[645px] mx-auto">
+    <div class="destination-container max-w-[1170px] mx-auto mt-20 px-4 mb-24">
+    <div class="destination-heading text-center mb-12">
+        <h1 class="text-3xl md:text-[40px] font-extrabold text-[#131318] mb-4 md:mb-6">Choose Your Destination</h1>
+        <p class="text-[#131318]/75 max-w-[645px] mx-auto text-sm md:text-base">
             Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. 
             Sodales dictumst nec nibh pellentesque.
-            </p>
-        </div>
+        </p>
+    </div>
 
-        <div class="grid grid-cols-12 gap-6">
+    <div class="grid grid-cols-12 gap-4 md:gap-6">
         
-            <div class="relative col-span-6 h-[300px]">
-                <img src="./assets/img/Rectangle 5.png" class="w-full h-full object-cover rounded-xl" alt="Maldives">
-                <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
-                    <h2 class="text-white text-2xl font-bold">Maldives</h2>
-                </div>
+        <div class="relative col-span-12 md:col-span-6 h-[250px] md:h-[300px]">
+            <img src="./assets/img/Rectangle 5.png" class="w-full h-full object-cover rounded-xl" alt="Maldives">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-all rounded-xl cursor-pointer">
+                <h2 class="text-white text-xl md:text-2xl font-bold">Maldives</h2>
             </div>
-
-            <div class="relative col-span-6 h-[300px]">
-                <img src="./assets/img/Rectangle 8.png" class="w-full h-full object-cover rounded-xl" alt="Indonesia">
-                <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
-                    <h2 class="text-white text-2xl font-bold">Indonesia</h2>
-                </div>
-            </div>
-
-            <div class="relative col-span-4 h-[280px]">
-                <img src="./assets/img/Rectangle 7.png" class="w-full h-full object-cover rounded-xl" alt="Sri Lanka">
-                <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
-                    <h2 class="text-white text-2xl font-bold">Sri Lanka</h2>
-                </div>
-            </div>
-
-            <div class="relative col-span-5 h-[280px]">
-                <img src="./assets/img/Rectangle 6.png" class="w-full h-full object-cover rounded-xl" alt="North America">
-                <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
-                    <h2 class="text-white text-2xl font-bold">North America</h2>
-                </div>
-            </div>
-
-            <div class="relative col-span-3 h-[280px]">
-                <img src="./assets/img/Rectangle 9.png" class="w-full h-full object-cover rounded-xl" alt="Kashmir">
-                <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
-                    <h2 class="text-white text-2xl font-bold">Kashmir</h2>
-                </div>
-            </div>
-
-            <div class="relative col-span-5 h-[300px]">
-                <img src="./assets/img/Rectangle 10.png" class="w-full h-full object-cover rounded-xl" alt="Bangladesh">
-                <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
-                    <h2 class="text-white text-2xl font-bold">Bangladesh</h2>
-                </div>
-            </div>
-
-            <div class="relative col-span-7 h-[300px]">
-                <img src="./assets/img/Rectangle 11.png" class="w-full h-full object-cover rounded-xl" alt="Bandarban">
-                <div class="absolute inset-0 flex items-center justify-center bg-black/20 rounded-xl">
-                    <h2 class="text-white text-2xl font-bold">Bandarban</h2>
-                </div>
-            </div>
-
         </div>
+
+        <div class="relative col-span-12 md:col-span-6 h-[250px] md:h-[300px]">
+            <img src="./assets/img/Rectangle 8.png" class="w-full h-full object-cover rounded-xl" alt="Indonesia">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-all rounded-xl cursor-pointer">
+                <h2 class="text-white text-xl md:text-2xl font-bold">Indonesia</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-12 md:col-span-4 h-[250px] md:h-[280px]">
+            <img src="./assets/img/Rectangle 7.png" class="w-full h-full object-cover rounded-xl" alt="Sri Lanka">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-all rounded-xl cursor-pointer">
+                <h2 class="text-white text-xl md:text-2xl font-bold">Sri Lanka</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-12 md:col-span-5 h-[250px] md:h-[280px]">
+            <img src="./assets/img/Rectangle 6.png" class="w-full h-full object-cover rounded-xl" alt="North America">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-all rounded-xl cursor-pointer">
+                <h2 class="text-white text-xl md:text-2xl font-bold">North America</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-12 md:col-span-3 h-[250px] md:h-[280px]">
+            <img src="./assets/img/Rectangle 9.png" class="w-full h-full object-cover rounded-xl" alt="Kashmir">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-all rounded-xl cursor-pointer">
+                <h2 class="text-white text-xl md:text-2xl font-bold">Kashmir</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-12 md:col-span-5 h-[250px] md:h-[300px]">
+            <img src="./assets/img/Rectangle 10.png" class="w-full h-full object-cover rounded-xl" alt="Bangladesh">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-all rounded-xl cursor-pointer">
+                <h2 class="text-white text-xl md:text-2xl font-bold">Bangladesh</h2>
+            </div>
+        </div>
+
+        <div class="relative col-span-12 md:col-span-7 h-[250px] md:h-[300px]">
+            <img src="./assets/img/Rectangle 11.png" class="w-full h-full object-cover rounded-xl" alt="Bandarban">
+            <div class="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-all rounded-xl cursor-pointer">
+                <h2 class="text-white text-xl md:text-2xl font-bold">Bandarban</h2>
+            </div>
+        </div>
+
+    </div>
     </div>
     <!-- Why Choose section -->
-    <div class="choose-container max-w-[1200px] mx-auto py-12 px-4 mb-[100px]">
-        <div class="choose-heading mx-auto text-center mb-12">
-            <h3 class="text-3xl font-bold mb-4">Why Choose Us</h3>
-            <p class="max-w-2xl mx-auto text-gray-600">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
-        </div>
-            <div class="card-container grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="p-8 rounded-2xl border border-orange-100 bg-orange-50/30">
-                    <img src="./assets/img/hotel 1.png" alt="" class="w-16 h-16 mb-6">
-                    <h3 class="text-xl font-bold mb-4">Handpicked Hotels</h3>
-                    <p class="text-gray-600 leading-relaxed">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-                </div>
-                <div class="p-8 rounded-2xl border border-cyan-100 bg-cyan-50/30">
-                    <img src="./assets/img/map.png" alt="" class="w-16 h-16 mb-6">
-                    <h3 class="text-xl font-bold mb-4">World Class Service</h3>
-                    <p class="text-gray-600 leading-relaxed">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-                </div>
-                <div class="p-8 rounded-2xl border border-pink-100 bg-pink-200/30 md:col-span-2 md:w-1/2 md:mx-auto">
-                    <img src="./assets/img/priceTag.png" alt="" class="w-16 h-16 mb-6">
-                    <h3 class="text-xl font-bold mb-4">Best Price Guarantee</h3>
-                    <p class="text-gray-600 leading-relaxed">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-                </div>
-            </div>
-    </div>
-    <!-- Deals and Destination -->
-     <section class="deals-section max-w-[1200px] mx-auto py-12 px-4">
-    <div class="text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-[#131318] mb-6">Deals & Discounts</h2>
-        <p class="max-w-[650px] mx-auto text-[#131318]/75">
+    <div class="choose-container max-w-[1200px] mx-auto py-12 px-4 mb-24">
+    <div class="choose-heading mx-auto text-center mb-12">
+        <h3 class="text-3xl md:text-[40px] font-extrabold mb-4 text-[#131318]">Why Choose Us</h3>
+        <p class="max-w-2xl mx-auto text-[#131318]/70 text-sm md:text-base">
             Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.
         </p>
     </div>
 
-    <div class="relative w-full h-[450px] rounded-2xl mb-6 bg-cover bg-center flex items-center justify-end p-8" 
+    <div class="card-container grid grid-cols-1 md:grid-cols-2 lg:gap-6 gap-4">
+        
+        <div class="p-8 rounded-2xl border border-orange-100 bg-orange-50/30 transition-transform hover:scale-[1.02]">
+            <img src="./assets/img/hotel 1.png" alt="Hotel Icon" class="w-16 h-16 mb-6">
+            <h3 class="text-xl font-bold mb-4">Handpicked Hotels</h3>
+            <p class="text-gray-600 leading-relaxed text-sm">
+                Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+            </p>
+        </div>
+
+        <div class="p-8 rounded-2xl border border-cyan-100 bg-cyan-50/30 transition-transform hover:scale-[1.02]">
+            <img src="./assets/img/map.png" alt="Map Icon" class="w-16 h-16 mb-6">
+            <h3 class="text-xl font-bold mb-4">World Class Service</h3>
+            <p class="text-gray-600 leading-relaxed text-sm">
+                Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+            </p>
+        </div>
+
+        <div class="p-8 rounded-2xl border border-pink-100 bg-pink-50/30 md:col-span-2 lg:w-1/2 lg:mx-auto transition-transform hover:scale-[1.02]">
+            <img src="./assets/img/priceTag.png" alt="Price Tag Icon" class="w-16 h-16 mb-6">
+            <h3 class="text-xl font-bold mb-4">Best Price Guarantee</h3>
+            <p class="text-gray-600 leading-relaxed text-sm">
+                Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+            </p>
+        </div>
+    </div>
+</div>
+    <!-- Deals and Destination -->
+     <section class="deals-section max-w-[1200px] mx-auto py-12 px-4">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[#131318] mb-4 md:mb-6">Deals & Discounts</h2>
+        <p class="max-w-[650px] mx-auto text-[#131318]/75 text-sm md:text-base">
+            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.
+        </p>
+    </div>
+
+    <div class="relative w-full min-h-[450px] rounded-2xl mb-8 bg-cover bg-center flex items-center justify-center md:justify-end p-4 md:p-8" 
          style="background-image: url('./assets/img/deal-1.png');">
         
-        <div class="w-full md:w-1/2 bg-white/30 backdrop-blur-md p-8 rounded-2xl border border-white">
-            <div class="flex gap-4 text-sm mb-4">
-                <span class="flex items-center gap-1"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.75 0C4.365 0 0 4.365 0 9.75C0 15.135 4.365 19.5 9.75 19.5C15.135 19.5 19.5 15.135 19.5 9.75C19.5 4.365 15.135 0 9.75 0ZM10.5 3.75C10.5 3.55109 10.421 3.36032 10.2803 3.21967C10.1397 3.07902 9.94891 3 9.75 3C9.55109 3 9.36032 3.07902 9.21967 3.21967C9.07902 3.36032 9 3.55109 9 3.75V9.75C9 10.164 9.336 10.5 9.75 10.5H14.25C14.4489 10.5 14.6397 10.421 14.7803 10.2803C14.921 10.1397 15 9.94891 15 9.75C15 9.55109 14.921 9.36032 14.7803 9.21967C14.6397 9.07902 14.4489 9 14.25 9H10.5V3.75Z" fill="#FF5400"/>
-                </svg>7 Day / 6 Night</span>
-                <span class="flex items-center gap-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75C15.75 7.74456 15.3549 8.69839 14.6517 9.40165C13.9484 10.1049 12.9946 10.5 12 10.5C11.0054 10.5 10.0516 10.1049 9.34835 9.40165C8.64509 8.69839 8.25 7.74456 8.25 6.75ZM15.75 9.75C15.75 8.95435 16.0661 8.19129 16.6287 7.62868C17.1913 7.06607 17.9544 6.75 18.75 6.75C19.5456 6.75 20.3087 7.06607 20.8713 7.62868C21.4339 8.19129 21.75 8.95435 21.75 9.75C21.75 10.5456 21.4339 11.3087 20.8713 11.8713C20.3087 12.4339 19.5456 12.75 18.75 12.75C17.9544 12.75 17.1913 12.4339 16.6287 11.8713C16.0661 11.3087 15.75 10.5456 15.75 9.75ZM2.25 9.75C2.25 8.95435 2.56607 8.19129 3.12868 7.62868C3.69129 7.06607 4.45435 6.75 5.25 6.75C6.04565 6.75 6.80871 7.06607 7.37132 7.62868C7.93393 8.19129 8.25 8.95435 8.25 9.75C8.25 10.5456 7.93393 11.3087 7.37132 11.8713C6.80871 12.4339 6.04565 12.75 5.25 12.75C4.45435 12.75 3.69129 12.4339 3.12868 11.8713C2.56607 11.3087 2.25 10.5456 2.25 9.75ZM6.31 15.117C6.91995 14.161 7.76108 13.3743 8.75562 12.8294C9.75016 12.2846 10.866 11.9994 12 12C12.9498 11.9991 13.8891 12.1989 14.7564 12.5862C15.6237 12.9734 16.3994 13.5395 17.0327 14.2474C17.6661 14.9552 18.1428 15.7888 18.4317 16.6936C18.7205 17.5985 18.815 18.5541 18.709 19.498C18.696 19.6153 18.6556 19.7278 18.591 19.8265C18.5263 19.9252 18.4393 20.0073 18.337 20.066C16.4086 21.1725 14.2233 21.7532 12 21.75C9.695 21.75 7.53 21.138 5.663 20.066C5.56069 20.0073 5.47368 19.9252 5.40904 19.8265C5.34441 19.7278 5.30396 19.6153 5.291 19.498C5.12305 17.9646 5.48246 16.4198 6.31 15.118V15.117Z" fill="#FF5400"/>
-                <path d="M5.082 14.254C4.09576 15.7764 3.63626 17.5803 3.774 19.389C3.17351 19.298 2.58291 19.1506 2.01 18.949L1.895 18.909C1.7924 18.8726 1.70256 18.8072 1.63635 18.7208C1.57015 18.6343 1.53043 18.5305 1.522 18.422L1.512 18.301C1.47161 17.799 1.53276 17.2939 1.69181 16.816C1.85086 16.3382 2.10454 15.8972 2.43773 15.5195C2.77091 15.1418 3.17677 14.8351 3.63108 14.6177C4.08539 14.4002 4.57885 14.2766 5.082 14.254ZM20.226 19.389C20.3638 17.5803 19.9042 15.7764 18.918 14.254C19.4212 14.2766 19.9146 14.4002 20.3689 14.6177C20.8232 14.8351 21.2291 15.1418 21.5623 15.5195C21.8955 15.8972 22.1492 16.3382 22.3082 16.816C22.4672 17.2939 22.5284 17.799 22.488 18.301L22.478 18.422C22.4694 18.5304 22.4296 18.6339 22.3634 18.7202C22.2972 18.8064 22.2075 18.8717 22.105 18.908L21.99 18.948C21.423 19.148 20.834 19.297 20.226 19.389Z" fill="#FF5400"/>
-                </svg>Max: 10</span>
-                <span class="flex items-center gap-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 22.351L11.61 22.391L11.638 22.407C11.749 22.467 11.8733 22.4985 11.9995 22.4985C12.1257 22.4985 12.25 22.467 12.361 22.407L12.389 22.392L12.46 22.351C12.8511 22.1191 13.2328 21.8716 13.604 21.609C14.5651 20.9305 15.463 20.1667 16.287 19.327C18.231 17.337 20.25 14.347 20.25 10.5C20.25 8.31196 19.3808 6.21354 17.8336 4.66637C16.2865 3.11919 14.188 2.25 12 2.25C9.81196 2.25 7.71354 3.11919 6.16637 4.66637C4.61919 6.21354 3.75 8.31196 3.75 10.5C3.75 14.346 5.77 17.337 7.713 19.327C8.53664 20.1667 9.43427 20.9304 10.395 21.609C10.7666 21.8716 11.1485 22.1191 11.54 22.351ZM12 13.5C12.7956 13.5 13.5587 13.1839 14.1213 12.6213C14.6839 12.0587 15 11.2956 15 10.5C15 9.70435 14.6839 8.94129 14.1213 8.37868C13.5587 7.81607 12.7956 7.5 12 7.5C11.2044 7.5 10.4413 7.81607 9.87868 8.37868C9.31607 8.94129 9 9.70435 9 10.5C9 11.2956 9.31607 12.0587 9.87868 12.6213C10.4413 13.1839 11.2044 13.5 12 13.5Z" fill="#FF5400"/>
-                </svg>Malaysia</span>
+        <div class="w-full md:w-3/5 lg:w-1/2 bg-white/80 md:bg-white/30 backdrop-blur-lg md:backdrop-blur-md p-6 md:p-10 rounded-2xl border border-white shadow-xl">
+            <div class="flex flex-wrap gap-4 text-xs md:text-sm mb-4">
+                <span class="flex items-center gap-1 font-bold text-[#131318]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF5400" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 7 Day / 6 Night</span>
+                <span class="flex items-center gap-1 font-bold text-[#131318]"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FF5400"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg> Max: 10</span>
+                <span class="flex items-center gap-1 font-bold text-[#131318]"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FF5400"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg> Malaysia</span>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Tour To Satorini</h3>
-            <p class="text-gray-600 mb-4 text-sm leading-relaxed">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.</p>
-            <p class="text-[#FF5400] font-bold mb-4 text-lg">Price: $1300-$1500</p>
-            <button class="bg-[#FF5400] text-white px-6 py-3 rounded-lg font-bold hover:cursor-pointer hover:bg-black hover:border-none">Book Now</button>
+            <h3 class="text-xl md:text-2xl font-extrabold mb-3">Tour To Santorini</h3>
+            <p class="text-gray-700 mb-4 text-sm leading-relaxed">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim.</p>
+            <p class="text-[#FF5400] font-extrabold mb-6 text-xl">Price: $1300 - $1500</p>
+            <button class="bg-[#FF5400] text-white px-8 py-3 rounded-lg font-bold hover:bg-black transition-all">Book Now</button>
         </div>
     </div>
 
-    <div class="relative w-full h-[450px] rounded-2xl mb-6 bg-cover bg-center flex items-center justify-start p-8" 
+    <div class="relative w-full min-h-[450px] rounded-2xl mb-8 bg-cover bg-center flex items-center justify-center md:justify-start p-4 md:p-8" 
          style="background-image: url('./assets/img/deal-2.png');">
         
-        <div class="w-full md:w-1/2 bg-white/30 backdrop-blur-md p-8 rounded-2xl border border-white">
-            <div class="flex gap-4 text-sm mb-4">
-                <span class="flex items-center gap-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.25C6.615 2.25 2.25 6.615 2.25 12C2.25 17.385 6.615 21.75 12 21.75C17.385 21.75 21.75 17.385 21.75 12C21.75 6.615 17.385 2.25 12 2.25ZM12.75 6C12.75 5.80109 12.671 5.61032 12.5303 5.46967C12.3897 5.32902 12.1989 5.25 12 5.25C11.8011 5.25 11.6103 5.32902 11.4697 5.46967C11.329 5.61032 11.25 5.80109 11.25 6V12C11.25 12.414 11.586 12.75 12 12.75H16.5C16.6989 12.75 16.8897 12.671 17.0303 12.5303C17.171 12.3897 17.25 12.1989 17.25 12C17.25 11.8011 17.171 11.6103 17.0303 11.4697C16.8897 11.329 16.6989 11.25 16.5 11.25H12.75V6Z" fill="#FF5400"/></svg> 7 Day / 6 Night</span>
-                <span class="flex items-center gap-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75C15.75 7.74456 15.3549 8.69839 14.6517 9.40165C13.9484 10.1049 12.9946 10.5 12 10.5C11.0054 10.5 10.0516 10.1049 9.34835 9.40165C8.64509 8.69839 8.25 7.74456 8.25 6.75ZM15.75 9.75C15.75 8.95435 16.0661 8.19129 16.6287 7.62868C17.1913 7.06607 17.9544 6.75 18.75 6.75C19.5456 6.75 20.3087 7.06607 20.8713 7.62868C21.4339 8.19129 21.75 8.95435 21.75 9.75C21.75 10.5456 21.4339 11.3087 20.8713 11.8713C20.3087 12.4339 19.5456 12.75 18.75 12.75C17.9544 12.75 17.1913 12.4339 16.6287 11.8713C16.0661 11.3087 15.75 10.5456 15.75 9.75ZM2.25 9.75C2.25 8.95435 2.56607 8.19129 3.12868 7.62868C3.69129 7.06607 4.45435 6.75 5.25 6.75C6.04565 6.75 6.80871 7.06607 7.37132 7.62868C7.93393 8.19129 8.25 8.95435 8.25 9.75C8.25 10.5456 7.93393 11.3087 7.37132 11.8713C6.80871 12.4339 6.04565 12.75 5.25 12.75C4.45435 12.75 3.69129 12.4339 3.12868 11.8713C2.56607 11.3087 2.25 10.5456 2.25 9.75ZM6.31 15.117C6.91995 14.161 7.76108 13.3743 8.75562 12.8294C9.75016 12.2846 10.866 11.9994 12 12C12.9498 11.9991 13.8891 12.1989 14.7564 12.5862C15.6237 12.9734 16.3994 13.5395 17.0327 14.2474C17.6661 14.9552 18.1428 15.7888 18.4317 16.6936C18.7205 17.5985 18.815 18.5541 18.709 19.498C18.696 19.6153 18.6556 19.7278 18.591 19.8265C18.5263 19.9252 18.4393 20.0073 18.337 20.066C16.4086 21.1725 14.2233 21.7532 12 21.75C9.695 21.75 7.53 21.138 5.663 20.066C5.56069 20.0073 5.47368 19.9252 5.40904 19.8265C5.34441 19.7278 5.30396 19.6153 5.291 19.498C5.12305 17.9646 5.48246 16.4198 6.31 15.118V15.117Z" fill="#FF5400"/>
-                <path d="M5.082 14.254C4.09576 15.7764 3.63626 17.5803 3.774 19.389C3.17351 19.298 2.58291 19.1506 2.01 18.949L1.895 18.909C1.7924 18.8726 1.70256 18.8072 1.63635 18.7208C1.57015 18.6343 1.53043 18.5305 1.522 18.422L1.512 18.301C1.47161 17.799 1.53276 17.2939 1.69181 16.816C1.85086 16.3382 2.10454 15.8972 2.43773 15.5195C2.77091 15.1418 3.17677 14.8351 3.63108 14.6177C4.08539 14.4002 4.57885 14.2766 5.082 14.254ZM20.226 19.389C20.3638 17.5803 19.9042 15.7764 18.918 14.254C19.4212 14.2766 19.9146 14.4002 20.3689 14.6177C20.8232 14.8351 21.2291 15.1418 21.5623 15.5195C21.8955 15.8972 22.1492 16.3382 22.3082 16.816C22.4672 17.2939 22.5284 17.799 22.488 18.301L22.478 18.422C22.4694 18.5304 22.4296 18.6339 22.3634 18.7202C22.2972 18.8064 22.2075 18.8717 22.105 18.908L21.99 18.948C21.423 19.148 20.834 19.297 20.226 19.389Z" fill="#FF5400"/>
-                </svg>Max: 10</span>
-                <span class="flex items-center gap-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 22.351L11.61 22.391L11.638 22.407C11.749 22.467 11.8733 22.4985 11.9995 22.4985C12.1257 22.4985 12.25 22.467 12.361 22.407L12.389 22.392L12.46 22.351C12.8511 22.1191 13.2328 21.8716 13.604 21.609C14.5651 20.9305 15.463 20.1667 16.287 19.327C18.231 17.337 20.25 14.347 20.25 10.5C20.25 8.31196 19.3808 6.21354 17.8336 4.66637C16.2865 3.11919 14.188 2.25 12 2.25C9.81196 2.25 7.71354 3.11919 6.16637 4.66637C4.61919 6.21354 3.75 8.31196 3.75 10.5C3.75 14.346 5.77 17.337 7.713 19.327C8.53664 20.1667 9.43427 20.9304 10.395 21.609C10.7666 21.8716 11.1485 22.1191 11.54 22.351ZM12 13.5C12.7956 13.5 13.5587 13.1839 14.1213 12.6213C14.6839 12.0587 15 11.2956 15 10.5C15 9.70435 14.6839 8.94129 14.1213 8.37868C13.5587 7.81607 12.7956 7.5 12 7.5C11.2044 7.5 10.4413 7.81607 9.87868 8.37868C9.31607 8.94129 9 9.70435 9 10.5C9 11.2956 9.31607 12.0587 9.87868 12.6213C10.4413 13.1839 11.2044 13.5 12 13.5Z" fill="#FF5400"/>
-                </svg>Malaysia</span>
+        <div class="w-full md:w-3/5 lg:w-1/2 bg-white/80 md:bg-white/30 backdrop-blur-lg md:backdrop-blur-md p-6 md:p-10 rounded-2xl border border-white shadow-xl">
+            <div class="flex flex-wrap gap-4 text-xs md:text-sm mb-4">
+                <span class="flex items-center gap-1 font-bold text-[#131318]">7 Day / 6 Night</span>
+                <span class="flex items-center gap-1 font-bold text-[#131318]">Max: 10</span>
+                <span class="flex items-center gap-1 font-bold text-[#131318]">Malaysia</span>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Tour To Satorini</h3>
-            <p class="text-gray-600 mb-4 text-sm leading-relaxed">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.</p>
-            <p class="text-[#FF5400] font-bold mb-4 text-lg">Price: $1300-$1500</p>
-            <button class="bg-[#FF5400] text-white px-6 py-3 rounded-lg font-bold hover:cursor-pointer hover:bg-black hover:border-none">Book Now</button>
+            <h3 class="text-xl md:text-2xl font-extrabold mb-3">Tour To Santorini</h3>
+            <p class="text-gray-700 mb-4 text-sm leading-relaxed">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim.</p>
+            <p class="text-[#FF5400] font-extrabold mb-6 text-xl">Price: $1300 - $1500</p>
+            <button class="bg-[#FF5400] text-white px-8 py-3 rounded-lg font-bold hover:bg-black transition-all">Book Now</button>
         </div>
     </div>
-    <div class="relative w-full h-[450px] rounded-2xl mb-6 bg-cover bg-center flex items-center justify-end p-8" 
+
+    <div class="relative w-full min-h-[450px] rounded-2xl mb-8 bg-cover bg-center flex items-center justify-center md:justify-end p-4 md:p-8" 
          style="background-image: url('./assets/img/deal-1.png');">
         
-        <div class="w-full md:w-1/2 bg-white/30 backdrop-blur-md p-8 rounded-2xl border border-white">
-            <div class="flex gap-4 text-sm mb-4">
-                <span class="flex items-center gap-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.25C6.615 2.25 2.25 6.615 2.25 12C2.25 17.385 6.615 21.75 12 21.75C17.385 21.75 21.75 17.385 21.75 12C21.75 6.615 17.385 2.25 12 2.25ZM12.75 6C12.75 5.80109 12.671 5.61032 12.5303 5.46967C12.3897 5.32902 12.1989 5.25 12 5.25C11.8011 5.25 11.6103 5.32902 11.4697 5.46967C11.329 5.61032 11.25 5.80109 11.25 6V12C11.25 12.414 11.586 12.75 12 12.75H16.5C16.6989 12.75 16.8897 12.671 17.0303 12.5303C17.171 12.3897 17.25 12.1989 17.25 12C17.25 11.8011 17.171 11.6103 17.0303 11.4697C16.8897 11.329 16.6989 11.25 16.5 11.25H12.75V6Z" fill="#FF5400"/>
-                </svg>7 Day / 6 Night</span>
-                <span class="flex items-center gap-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75C15.75 7.74456 15.3549 8.69839 14.6517 9.40165C13.9484 10.1049 12.9946 10.5 12 10.5C11.0054 10.5 10.0516 10.1049 9.34835 9.40165C8.64509 8.69839 8.25 7.74456 8.25 6.75ZM15.75 9.75C15.75 8.95435 16.0661 8.19129 16.6287 7.62868C17.1913 7.06607 17.9544 6.75 18.75 6.75C19.5456 6.75 20.3087 7.06607 20.8713 7.62868C21.4339 8.19129 21.75 8.95435 21.75 9.75C21.75 10.5456 21.4339 11.3087 20.8713 11.8713C20.3087 12.4339 19.5456 12.75 18.75 12.75C17.9544 12.75 17.1913 12.4339 16.6287 11.8713C16.0661 11.3087 15.75 10.5456 15.75 9.75ZM2.25 9.75C2.25 8.95435 2.56607 8.19129 3.12868 7.62868C3.69129 7.06607 4.45435 6.75 5.25 6.75C6.04565 6.75 6.80871 7.06607 7.37132 7.62868C7.93393 8.19129 8.25 8.95435 8.25 9.75C8.25 10.5456 7.93393 11.3087 7.37132 11.8713C6.80871 12.4339 6.04565 12.75 5.25 12.75C4.45435 12.75 3.69129 12.4339 3.12868 11.8713C2.56607 11.3087 2.25 10.5456 2.25 9.75ZM6.31 15.117C6.91995 14.161 7.76108 13.3743 8.75562 12.8294C9.75016 12.2846 10.866 11.9994 12 12C12.9498 11.9991 13.8891 12.1989 14.7564 12.5862C15.6237 12.9734 16.3994 13.5395 17.0327 14.2474C17.6661 14.9552 18.1428 15.7888 18.4317 16.6936C18.7205 17.5985 18.815 18.5541 18.709 19.498C18.696 19.6153 18.6556 19.7278 18.591 19.8265C18.5263 19.9252 18.4393 20.0073 18.337 20.066C16.4086 21.1725 14.2233 21.7532 12 21.75C9.695 21.75 7.53 21.138 5.663 20.066C5.56069 20.0073 5.47368 19.9252 5.40904 19.8265C5.34441 19.7278 5.30396 19.6153 5.291 19.498C5.12305 17.9646 5.48246 16.4198 6.31 15.118V15.117Z" fill="#FF5400"/>
-                <path d="M5.082 14.254C4.09576 15.7764 3.63626 17.5803 3.774 19.389C3.17351 19.298 2.58291 19.1506 2.01 18.949L1.895 18.909C1.7924 18.8726 1.70256 18.8072 1.63635 18.7208C1.57015 18.6343 1.53043 18.5305 1.522 18.422L1.512 18.301C1.47161 17.799 1.53276 17.2939 1.69181 16.816C1.85086 16.3382 2.10454 15.8972 2.43773 15.5195C2.77091 15.1418 3.17677 14.8351 3.63108 14.6177C4.08539 14.4002 4.57885 14.2766 5.082 14.254ZM20.226 19.389C20.3638 17.5803 19.9042 15.7764 18.918 14.254C19.4212 14.2766 19.9146 14.4002 20.3689 14.6177C20.8232 14.8351 21.2291 15.1418 21.5623 15.5195C21.8955 15.8972 22.1492 16.3382 22.3082 16.816C22.4672 17.2939 22.5284 17.799 22.488 18.301L22.478 18.422C22.4694 18.5304 22.4296 18.6339 22.3634 18.7202C22.2972 18.8064 22.2075 18.8717 22.105 18.908L21.99 18.948C21.423 19.148 20.834 19.297 20.226 19.389Z" fill="#FF5400"/>
-                </svg>Max: 10</span>
-                <span class="flex items-center gap-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 22.351L11.61 22.391L11.638 22.407C11.749 22.467 11.8733 22.4985 11.9995 22.4985C12.1257 22.4985 12.25 22.467 12.361 22.407L12.389 22.392L12.46 22.351C12.8511 22.1191 13.2328 21.8716 13.604 21.609C14.5651 20.9305 15.463 20.1667 16.287 19.327C18.231 17.337 20.25 14.347 20.25 10.5C20.25 8.31196 19.3808 6.21354 17.8336 4.66637C16.2865 3.11919 14.188 2.25 12 2.25C9.81196 2.25 7.71354 3.11919 6.16637 4.66637C4.61919 6.21354 3.75 8.31196 3.75 10.5C3.75 14.346 5.77 17.337 7.713 19.327C8.53664 20.1667 9.43427 20.9304 10.395 21.609C10.7666 21.8716 11.1485 22.1191 11.54 22.351ZM12 13.5C12.7956 13.5 13.5587 13.1839 14.1213 12.6213C14.6839 12.0587 15 11.2956 15 10.5C15 9.70435 14.6839 8.94129 14.1213 8.37868C13.5587 7.81607 12.7956 7.5 12 7.5C11.2044 7.5 10.4413 7.81607 9.87868 8.37868C9.31607 8.94129 9 9.70435 9 10.5C9 11.2956 9.31607 12.0587 9.87868 12.6213C10.4413 13.1839 11.2044 13.5 12 13.5Z" fill="#FF5400"/>
-                </svg>Malaysia</span>
+        <div class="w-full md:w-3/5 lg:w-1/2 bg-white/80 md:bg-white/30 backdrop-blur-lg md:backdrop-blur-md p-6 md:p-10 rounded-2xl border border-white shadow-xl">
+            <div class="flex flex-wrap gap-4 text-xs md:text-sm mb-4">
+                <span class="flex items-center gap-1 font-bold text-[#131318]">7 Day / 6 Night</span>
+                <span class="flex items-center gap-1 font-bold text-[#131318]">Max: 10</span>
+                <span class="flex items-center gap-1 font-bold text-[#131318]">Malaysia</span>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Tour To Satorini</h3>
-            <p class="text-gray-600 mb-4 text-sm leading-relaxed">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.</p>
-            <p class="text-[#FF5400] font-bold mb-4 text-lg">Price: $1300-$1500</p>
-            <button class="bg-[#FF5400] text-white px-6 py-3 rounded-lg font-bold hover:cursor-pointer hover:bg-black hover:border-none">Book Now</button>
+            <h3 class="text-xl md:text-2xl font-extrabold mb-3">Tour To Santorini</h3>
+            <p class="text-gray-700 mb-4 text-sm leading-relaxed">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim.</p>
+            <p class="text-[#FF5400] font-extrabold mb-6 text-xl">Price: $1300 - $1500</p>
+            <button class="bg-[#FF5400] text-white px-8 py-3 rounded-lg font-bold hover:bg-black transition-all">Book Now</button>
         </div>
     </div>
-    <div class="text-center mt-12 ">
-        <button class="bg-[#FF5400] text-white px-8 py-4 rounded-lg font-bold hover:cursor-pointer hover:bg-black hover:border-1 mb-[100px]">See All Packages</button>
+
+    <div class="text-center mt-12 mb-20">
+        <button class="bg-[#FF5400] text-white px-10 py-4 rounded-lg font-bold hover:bg-black transition-all transform hover:scale-105">
+            See All Packages
+        </button>
     </div>
-     </section>
+</section>
      <!-- promo section -->
     <section class="promo max-w-[1200px] mx-auto py-12 px-4">
         <div class="flex flex-col lg:flex-row gap-12 items-center">
