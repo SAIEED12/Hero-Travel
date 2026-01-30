@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        body { font-family: 'Mulish', sans-serif; }
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+    }
     </style>
 </head>
 <body class="max-w-[1600px] mx-auto">
@@ -167,12 +170,12 @@
     </div>
     <!-- Why Choose section -->
     <div class="choose-container max-w-[1200px] mx-auto py-12 px-4 mb-24">
-    <div class="choose-heading mx-auto text-center mb-12">
-        <h3 class="text-3xl md:text-[40px] font-extrabold mb-4 text-[#131318]">Why Choose Us</h3>
-        <p class="max-w-2xl mx-auto text-[#131318]/70 text-sm md:text-base">
-            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.
-        </p>
-    </div>
+        <div class="choose-heading mx-auto text-center mb-12">
+            <h3 class="text-3xl md:text-[40px] font-extrabold mb-4 text-[#131318]">Why Choose Us</h3>
+            <p class="max-w-2xl mx-auto text-[#131318]/70 text-sm md:text-base">
+                Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.
+            </p>
+        </div>
 
     <div class="card-container grid grid-cols-1 md:grid-cols-2 lg:gap-6 gap-4">
         
@@ -268,7 +271,7 @@
     <section class="promo max-w-[1200px] mx-auto py-12 px-4">
         <div class="flex flex-col lg:flex-row gap-12 items-center">
             <div class="left w-full lg:w-[530px]">
-                <h2 class="font-extrabold text-[40px] leading-tight mb-6">A Simple Perfect Place <br> To Get Lost</h2>
+                <h2 class="font-extrabold text-[40px] leading-tight mb-6">A Simple Perfect Place To Get Lost</h2>
                 <p class="text-[#5A5A5D] mb-6">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.</p> 
                 
                 <ul class="list-disc pl-6 font-bold mb-8 text-[#131318]">
